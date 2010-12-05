@@ -1,0 +1,3 @@
+h1. Lab 4
+
+p. The purpose of this lab is to demonstrate Dijkstra's Algorithm in a real world example. This program reads historical flight data and allows users to find the set of flights that gets users from one place to another as fast as possible. This lab was the final project for my Algorithms and Data Structures class.
