@@ -1,0 +1,46 @@
+The flight data provided was collected with EasySABRE in 1992.  It includes
+a little over 3500 flights.
+
+-------------------------------------------------------------
+
+Each line in the file for the airports includes the following
+
+#Airport information - USA
+#
+#Fields:
+# 3 - Airport abbreviation
+# 1 - <padding>
+# 5 - Time Zone (offset from GMT)
+# 1 - <padding>
+# 3 - X coordinate on map
+# 1 - <padding>
+# 3 - Y coordinate on map
+# 1 - <padding>
+# remainder - Name of City/Airport
+
+-------------------------------------------------------------
+
+Each line in the file for the flights includes the following
+
+#Airline Flight Schedule - USA
+#
+#Fields:
+# 2 - Airline
+# 4 - Flight
+# 2 - <padding>
+# 3 - Origin Airport
+# 1 - <padding>
+# 5 - Departure Time
+# 2 - <padding>
+# 3 - Destination Airport
+# 1 - <padding>
+# 5 - Arrival Time
+# 2 - <padding>
+# 2 - Meals (S=snack,L=lunch,D=dinner,B=breakfast,#=depends on class)
+# 4 - <padding>
+# 1 - Stops during flight
+# 4 - <padding>
+# 3 - Aircraft type
+# 12 - <padding>
+# remainder - Booking Classes
+#

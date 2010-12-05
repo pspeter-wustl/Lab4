@@ -1,0 +1,20 @@
+11 18
+A B C D E F G H I J K
+B C 4
+I B 8
+I C 11
+C D 8
+A I 7
+H I 1
+A H 6
+A D 2
+D E 10.75
+E D 7
+D E 3.14
+D G 4
+G D 13
+G E 14
+F G 10
+E F 9
+K J 3.5
+G H 2

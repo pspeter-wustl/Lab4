@@ -1,0 +1,69 @@
+// code to help read the airport-data.txt
+
+    BufferedReader r;
+    try {
+    	InputStream is = new FileInputStream("airport-data.txt");
+	r = new BufferedReader(new InputStreamReader(is));
+    } catch (IOException e) {
+	System.out.println("IOException while opening airport-data.txt\n" + e);
+	return;
+    }
+    try {
+	String nextline = r.readLine();
+	StringTokenizer st = new StringTokenizer(nextline);
+    	int numAirports = Integer.parseInt(st.nextToken());
+	// numAirports is the number of airports, use it as needed
+	for (int i = 0; i < numAirports; i++){
+	     nextline = r.readLine();
+	     st = new StringTokenizer(nextline);
+	     String airportCode = st.nextToken();
+	     int gmtConv = Integer.parseInt(st.nextToken());
+
+//      You now have all of the information stored in variables, namely
+//      airportCode is the three letter acronym for that airport
+//      gmtConv is the gmt offset that the GMTtime class needs
+// 
+//      You take it from here.
+
+        }
+    } catch (IOException e) {
+	System.out.println("IOException while reading sequence from " +
+				"airport-data.txt\n" + e);
+     return;
+    }
+
+
+// code to help read flight-data.txt
+
+    BufferedReader r;
+    try {
+    	InputStream is = new FileInputStream("flight-data.txt");
+      	r = new BufferedReader(new InputStreamReader(is));
+    } catch (IOException e) {
+    	System.out.println("IOException while opening flight-data.txt\n" + e);
+ 	return;
+    }
+    try {
+	String nextline = r.readLine();
+        while (nextline != null && !nextline.trim().equals("")){ // not end of file or an empty line
+	    StringTokenizer st = new StringTokenizer(nextline);
+	    String airline = st.nextToken();
+ 	    int flightNum = Integer.parseInt(st.nextToken());
+            int localDepartTime = Integer.parseInt(st.nextToken()); 
+            boolean am = st.nextToken().equals("A"); 
+	    int localArriveTime = Integer.parseInt(st.nextToken());
+            am = st.nextToken().equals("A");
+            nextline = r.readLine();
+
+// 	    all the information about the flight has been read in.
+//          I strongly recommend that you store the arrival and departure
+//          times in your flight objects as GMTtime instances.
+//          I think all of the variables are clear, but if not ask.
+//          You take it from here.
+	   }
+       }
+    } catch (IOException e) {
+	System.out.println("IOException while reading sequence from " +
+			 "flight-data.txt\n" + e);
+      	return;
+    }

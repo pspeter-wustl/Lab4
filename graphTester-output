@@ -1,0 +1,36 @@
+----- Transcript file graphTester-output started Tue Nov 23 15:07:28 CST 2010
+----- Reading input from the file: graph-data.txt. 
+The graph has 11 vertices and 18 edges.
+Adjacencies with weight given in parentheses are as follows:
+------------------------------------------------------------
+A
+  <A, I, 7.0>
+  <A, H, 6.0>
+  <A, D, 2.0>
+B
+  <B, C, 4.0>
+C
+  <C, D, 8.0>
+D
+  <D, E, 10.75>
+  <D, E, 3.14>
+  <D, G, 4.0>
+E
+  <E, D, 7.0>
+  <E, F, 9.0>
+F
+  <F, G, 10.0>
+G
+  <G, D, 13.0>
+  <G, E, 14.0>
+  <G, H, 2.0>
+H
+  <H, I, 1.0>
+I
+  <I, B, 8.0>
+  <I, C, 11.0>
+J
+K
+  <K, J, 3.5>
+
+----- Transcript file graphTester-output closed Tue Nov 23 15:07:29 CST 2010
